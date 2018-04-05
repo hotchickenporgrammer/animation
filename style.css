@@ -1,0 +1,72 @@
+body {
+    background: url("../img/1.jpg");
+    background: url("../img/2.jpg") -9999px -9999px;
+    background: url("../img/3.jpg") -9999px -9999px;
+    background: url("../img/4.jpg") -9999px -9999px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation-name: myfirst;
+    animation-duration: 30s;
+    /*变换时间*/
+    animation-delay: 2s;
+    /*动画开始时间*/
+    animation-iteration-count: infinite;
+    /*下一周期循环播放*/
+    animation-play-state: running;
+    /*动画开始运行*/
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes myfirst {
+    0% {
+        background: url("../img/1.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    37% {
+        background: url("../img/2.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    64% {
+        background: url("../img/3.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    100% {
+        background: url("../img/4.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+}
+
+.form {
+    background: rgba(255, 255, 255, 0.2);
+    width: 400px;
+    margin: 120px auto;
+}
+
+/*阴影*/
+
+.fa {
+    display: inline-block;
+    top: 27px;
+    left: 6px;
+    position: relative;
+    color: #ccc;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding-left: 26px;
+}
+
+.checkbox {
+    padding-left: 21px;
+}
